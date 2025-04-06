@@ -30,6 +30,9 @@ This repository contains everything needed to bring the device to life, from ele
 
 ## 📦 Components Summary
 
+### Block Diagram
+![E-Book Reader Diagram](diagrama.png)
+
 Below is a selection of the main components used in the hardware design. For each, you’ll find supplier and datasheet links for reference.
 
 | Component                  | Product Link | Datasheet |
