@@ -90,16 +90,6 @@ Below is a selection of the main components used in the hardware design. For eac
 
 ---
 
-## ⚡ Energy Profile (Overview)
-
-The design prioritizes minimal power consumption using:
-- E-paper’s low refresh power.
-- Sleep-friendly ESP32 operation modes.
-- Efficient LDO regulators and smart power routing.
-
-> A detailed consumption chart will be provided after real-time testing and power profiling.
-
----
 
 ## 📃 License  
 This project is released under the MIT License—feel free to use, remix, and contribute.
