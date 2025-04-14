@@ -68,8 +68,6 @@ Below is a selection of the main components used in the hardware design. For eac
 | W25Q512JVEIQ Flash Memory       | [SnapMagic](https://www.snapeda.com/parts/W25Q512JVEIQ/Winbond+Electronics/view-part/?ref=eda)     | [Datasheet](https://www.snapeda.com/parts/W25Q512JVEIQ/Winbond%20Electronics/datasheet/)                |
 | XC6220A331MR-G Voltage Regulator | [Component Search Engine](https://componentsearchengine.com/part-view/XC6220A331MR-G/Torex)      | [Datasheet](https://product.torexsemi.com/system/files/series/xc6220.pdf)                               |
 
-> Additional passives (resistors, capacitors, inductors, etc.) are chosen based on standard values and footprints for cost-effective production.
-
 ---
 
 ## 🧠 Key Modules and Functionality
