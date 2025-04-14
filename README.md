@@ -35,14 +35,38 @@ This repository contains everything needed to bring the device to life, from ele
 
 Below is a selection of the main components used in the hardware design. For each, you’ll find supplier and datasheet links for reference.
 
-| Component                  | Product Link | Datasheet |
-|---------------------------|--------------|-----------|
-| ESP32-C6 Module           | [SnapEDA](https://www.snapeda.com/parts/ESP32-C6-WROOM-1-N8/Espressif+Systems/view-part/?ref=eda) | [PDF](https://www.snapeda.com/parts/ESP32-C6-WROOM-1-N8/Espressif%20Systems/datasheet/) |
-| BME688 Sensor             | [SnapEDA](https://www.snapeda.com/parts/BME680/Bosch/view-part/?welcome=home) | [PDF](https://www.snapeda.com/parts/BME680/Bosch%20Sensortec/datasheet/) |
-| MCP73831 Charger IC       | [Mouser](https://eu.mouser.com/ProductDetail/Microchip-Technology/MCP73831T-2ACI-OT) | [PDF](https://eu.mouser.com/datasheet/2/268/MCP73831_Family_Data_Sheet_DS20001984H-3441711.pdf) |
-| DS3231 RTC Module         | [SnapEDA](https://www.snapeda.com/parts/DS3231SN%23/Analog+Devices/view-part/?ref=eda) | [PDF](https://www.snapeda.com/parts/DS3231SN%23/Analog%20Devices/datasheet/) |
-| W25Q512JVEIQ Flash Memory | [SnapEDA](https://www.snapeda.com/parts/W25Q512JVEIQ/Winbond+Electronics/view-part/?ref=eda) | [PDF](https://www.snapeda.com/parts/W25Q512JVEIQ/Winbond%20Electronics/datasheet/) |
-| USB-C Connector           | [GCT](https://componentsearchengine.com/part-view/USB4110-GF-A/GCT%20(GLOBAL%20CONNECTOR%20TECHNOLOGY)) | [PDF](https://gct.co/files/drawings/usb4110.pdf) |
+## Bill of Materials (BOM)
+
+| Component                       | Link                                                                                                | Datasheet                                                                                             |
+| :------------------------------ | :-------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------ |
+| ESP32-C6 WROOM-1-N8             | [SnapMagic](https://www.snapeda.com/parts/ESP32-C6-WROOM-1-N8/Espressif+Systems/view-part/?ref=eda) | [Datasheet](https://www.snapeda.com/parts/ESP32-C6-WROOM-1-N8/Espressif%20Systems/datasheet/)       |
+| ESP32C6 Varistor 1812           | [Mouser](https://ro.mouser.com/ProductDetail/EPCOS-TDK/B72520T0350K062?qs=dEfas%2FXlABIszF52uu7vrg%3D%3D) | [Datasheet](https://www.tdk-electronics.tdk.com/inf/75/db/CTVS_14/Surge_protection_series.pdf)     |
+| ESP32 WROVER 0805 Capacitor     | [Mouser](https://ro.mouser.com/ProductDetail/KYOCERA-AVX/SD0805S020S1R0?qs=jCA%252BPfw4LHbpkAoSnwrdjw%3D%3D) | [Datasheet](https://ro.mouser.com/datasheet/2/40/schottky-3165252.pdf)                               |
+| ESP32 WROVER BME680 Sensor      | [SnapMagic](https://www.snapeda.com/parts/BME680/Bosch/view-part/?welcome=home)                      | [Datasheet](https://www.snapeda.com/parts/BME680/Bosch%20Sensortec/datasheet/)                           |
+| ESP32 WROVER MCP73831 Power Management | [Mouser](https://eu.mouser.com/ProductDetail/Microchip-Technology/MCP73831T-2ACI-OT?qs=yUQqVecv4qvbBQBGbHx0Mw%3D%3D) | [Datasheet](https://eu.mouser.com/datasheet/2/268/MCP73831_Family_Data_Sheet_DS20001984H-3441711.pdf) |
+| ESP32 WROVER P-Channel MOSFET   | [Component Search Engine](https://componentsearchengine.com/part-view/DMG2305UX-7/Diodes%20Incorporated) | [Datasheet](https://www.diodes.com//assets/Datasheets/DMG2305UX.pdf)                                  |
+| LED Chip 0603                   | [SnapMagic](https://www.snapeda.com/parts/KP-1608SURCK/Kingbright/view-part/?ref=search&t=LED%200603) | [Datasheet](https://www.snapeda.com/parts/KP-1608SURCK/Kingbright/datasheet/)                           |
+| SJ                              | [GrabCad](https://grabcad.com/library/solder-jumpers-1)                                             | [Datasheet](https://www.youtube.com/watch?v=dQw4w9WgXcQ)                                                 |
+| LTSPICE Resistor 0402           | [Component Search Engine](https://componentsearchengine.com/part-view/R0402%201%25%20100%20K%20(RC0402FR-07100KL)/YAGEO) | [Datasheet](https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf) |
+| RCL CPOL 3528                   | [SnapMagic](https://www.snapeda.com/parts/TAJB475K025RNJ/AVX/view-part/?ref=dk&t=capacitor%203528&con_ref=None) | [Datasheet](https://s3.amazonaws.com/snapeda/datasheet/TAJB475K025RNJ_AVX.pdf)                       |
+| 112A-TAAR-R03                   | [Comet](https://store.comet.srl.ro/Catalogue/Product/43497/)                                       | [Datasheet](https://store.comet.bg/download-file.php?id=27596)                                       |
+| Capacitor 0402                  | [Component Search Engine](https://componentsearchengine.com/part-view/CC0402MRX5R5BB106/YAGEO)      | [Datasheet](https://componentsearchengine.com/Datasheets/2/CC0402MRX5R5BB106.pdf)                      |
+| 744043680 IND                   | [Mouser](https://eu.mouser.com/ProductDetail/Wurth-Elektronik/744043680?qs=PGXP4M47uW6VkZq%252BkzjrHA%3D%3D) | [Datasheet](https://www.we-online.com/components/products/datasheet/744043680.pdf)                   |
+| BD5229G-TR                      | [Component Search Engine](https://componentsearchengine.com/part-view/BD5229G-TR/ROHM%20Semiconductor) | [Datasheet](https://datasheet.datasheetarchive.com/originals/distributors/Datasheets_SAMA/f2b9741ef86007909f138d561a359946.pdf) |
+| Custom Button                   | [Panasonic](https://industry.panasonic.com/global/en/products/control/switch/light-touch/number/evqpuj02k) | [Datasheet](https://industry.panasonic.com/global/en/downloads?tab=catalog&small_g_cd=203&part_no=EVQPUJ02K&q=RVZRUFVKMDJLJTdDMTMlN0MyMDMlN0MzNDU5JTdDMSU3QyU3QzIlN0M%3D) |
+| CPH3225A                        | [SnapMagic](https://www.snapeda.com/parts/CPH3225A/Seiko+Instruments/view-part/?ref=eda)           | [Datasheet](https://www.snapeda.com/parts/CPH3225A/Seiko%20Instruments/datasheet/)                       |
+| DS3231SN RTC                    | [SnapMagic](https://www.snapeda.com/parts/DS3231SN%23/Analog+Devices/view-part/?ref=eda)          | [Datasheet](https://www.snapeda.com/parts/DS3231SN%23/Analog%20Devices/datasheet/)                      |
+| FH34SRJ-24S-0.5SH Connector     | [Component Search Engine](https://componentsearchengine.com/part-view/FH34SRJ-24S-0.5SH(99)/Hirose) | [Datasheet](https://www.hirose.com/en/product/document?clcode=CL0580-1255-6-99&productname=FH34SRJ-24S-0.5SH(99)&series=FH34SRJ&documenttype=2DDrawing&lang=en&documentid=0000990903) |
+| MAX17048G+T10 Battery Fuel Gauge | [SnapMagic](https://www.snapeda.com/parts/MAX17048G+T10/Analog+Devices/view-part/?ref=eda)         | [Datasheet](https://www.snapeda.com/parts/MAX17048G+T10/Analog%20Devices/datasheet/)                    |
+| MBR0530 Schottky Diode         | [SnapMagic](https://www.snapeda.com/parts/MBR0530/Onsemi/view-part/?ref=eda)                      | [Datasheet](https://www.snapeda.com/parts/MBR0530/ON%20Semiconductor/datasheet/)                         |
+| PGB1010603MR Inductor          | [SnapMagic](https://www.snapeda.com/parts/PGB1010603MR/Littelfuse/view-part/?ref=eda)              | [Datasheet](https://www.snapeda.com/parts/PGB1010603MR/Littelfuse%20Inc./datasheet/)                     |
+| QWIIC Connector                 | [Mouser](https://eu.mouser.com/ProductDetail/Adafruit/4208?qs=PzGy0jfpSMtbScLbr0L5dw%3D%3D)         | [Datasheet](https://www.youtube.com/watch?v=dQw4w9WgXcQ)                                                 |
+| USB4110-GF-A USB Hub            | [Component Search Engine](https://componentsearchengine.com/part-view/USB4110-GF-A/GCT%20(GLOBAL%20CONNECTOR%20TECHNOLOGY)) | [Datasheet](https://gct.co/files/drawings/usb4110.pdf)                                                 |
+| SI1308EDL-T1-GE3 MOSFET         | [SnapMagic](https://www.snapeda.com/parts/SI1308EDL-T1-GE3/Vishay+Siliconix/view-part/?ref=eda)   | [Datasheet](https://www.youtube.com/watch?v=dQw4w9WgXcQ)                                                 |
+| TPTP20R                         | [Comet](https://easyeda.com/component/7524403feb2642ac9f9f26dfb93ceacf)                            | [Datasheet](https://easyeda.com/component/7524403feb2642ac9f9f26dfb93ceacf)                              |
+| USBLC6-2SC6Y USB Surge Protection | [SnapMagic](https://www.snapeda.com/parts/USBLC6-2SC6Y/STMicroelectronics/view-part/?ref=eda)    | [Datasheet](https://www.snapeda.com/parts/USBLC6-2SC6Y/STMicroelectronics/datasheet/)                   |
+| W25Q512JVEIQ Flash Memory       | [SnapMagic](https://www.snapeda.com/parts/W25Q512JVEIQ/Winbond+Electronics/view-part/?ref=eda)     | [Datasheet](https://www.snapeda.com/parts/W25Q512JVEIQ/Winbond%20Electronics/datasheet/)                |
+| XC6220A331MR-G Voltage Regulator | [Component Search Engine](https://componentsearchengine.com/part-view/XC6220A331MR-G/Torex)      | [Datasheet](https://product.torexsemi.com/system/files/series/xc6220.pdf)                               |
 
 > Additional passives (resistors, capacitors, inductors, etc.) are chosen based on standard values and footprints for cost-effective production.
 
